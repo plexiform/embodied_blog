@@ -2,56 +2,100 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      model-viewer {
+        width:inherit;
+        height:inherit;
+      }
+    </style>
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} /> 
+    <meta name="generator" content={Astro.generator} />
     <title>The Embody Problem</title>
+    
   </head>
-  <body>
-    <h1>Mechanical Operator at the Dynamic Theater </h1>
-    <h4>Baamin/Baimin: baroque, Li Bai, ming, middleman. Double "a" matches my birthname; Vetelles: convexum, vestibulum, sa<i>telles</i> (guard, attendant). May be rhymed with my birthname.</h4>
-<h4>Flame in the cradle, bowstring taut, spring; moon in the mirror, siren's vanity, swim; man in his finitude, heat rising, plunge, plunge, as night's mirror absorbs white, your plunge absorbs you; fall, and sleep in shimmering, milky sheets you – another day.</h4>
-    <h2>Central configurations. Geometric group theory, mechanics, convex analysis, operator algebras.</h2>
+  <body style="background-color:black; color:gainsboro; font-family: system-ui">
+    <h1 style="color:wheat">
+      <span style="color:plum">Human Engines. </span><span style="color:violet"
+        >Stochastic geometric mechanics.</span
+      > Convex analysis, geometric representation theory, central configurations (<span style="color:rgb(0, 178, 209)">polytopes!</span>)
+    </h1>
 
-    <p>II. Trop., an entrance, opening, beginning: vestibula nimirum honesta aditusque ad causam faciet illustres (<i>
-An honorable vestibule, and an approach to the cause, will surely make the illustrious,</i>), Cic. Or. 15, 50: vestibulum modo artis alicujus ingredi (<i>to enter the vestibule in the manner of any art</i>), Quint. 1, 5, 7; cf. id. 8, praef. § 18; 9, 4, 10. (<a href="https://alatius.com/ls/index.php?l=vestibulum">https://alatius.com/ls/index.php?l=vestibulum)</a>)
-      
-    <br/><br/>
+    <h1>
+      A mathematical blog that uses audio processing, effective
+      exposition, and optima. How do bodies dance in spatial reference frames?
+    </h1>
 
-    Balance [metaphorically and vestibularly] within; production and operations [of worldly vestibules] without; to be one for Aiode and Melete.
+    <h2 style="color:thistle">
+      <i>Long-term goal: </i>
+      <span style="color:wheat; background-color:#BF3475; padding:1.5px"
+        >Discover mathematics</span>
 
-    </p>
+      <span style="color:wheat; background-color:#50366F; padding:1.5px">design motorcycles</span>
 
-    <p>Mechanical problems e.g. prosthetics, satellites; dynamical e.g. social sciences, operations; <i>dance</i>.</p>
+      <span style="color:wheat; background-color:#1F214D; padding:1.5px">draft stars</span>
+       
 
-    <h3>Tools (in development)</h3>
-    <ul>
-      <li>Creative field experiment design</li>
-      <ul>
-        <li>Duality + symmetries</li>
-        <li>Topology + knots</li>
-        <li>Mechanics</li>
-      </ul>
-      <li>Sensible thinking (design, forecasts, optimizing, algorithmic (Keenan, maybe Udi))</li>
-      <li>Spatial reasoning, improvisational skills</li>
-      <li>Operations</li>
-      <li>Lots of stuff</li>
-    </ul>
+      <span style="color:wheat; background-color:#000000; padding:1.5px"> dance</span>
+    </h2>
 
-    Analysis + LA -> Naive Lie theory -> Group theory
-Visuals: <br/>
-    Sasho (topology), Carter (group theory), Needham (complex analysis, differential geometry), Keenan (differential geometry, MCMC), !!! Multivariate statistics, !!! convex optimization, 
-    <br/><br/>
+    <div style="max-width:20%">
+      <h4>
+       <span style="color:rgb(0, 178, 209)">Baamin/Baimin:</span> baroque, Li Bai, ming, middleman. Double "a" matches my
+        birthname
+      </h4>
+      <h4>
+        <span style="color:rgb(0, 178, 209)">Vetelles:</span> convexum, vestibulum, sa<i>telles</i> (guard, attendant). May be
+        rhymed with my birthname
+      </h4>
 
-    <img src="" width="60%">
-    <br/>
-   
+    </div>
+
+    <div style="height:500px;width:300px;z-index:10;position:absolute; top:0;right:0">
+    <model-viewer
+      src="src/assets/model/Astronaut.glb"
+      camera-controls
+      tone-mapping="neutral"
+
+      shadow-intensity="5"
+    >
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+    </model-viewer>
+    </div>
+    <h4 style="justify-content:right;text-align:end; color:plum">In-variance</h4>
+    <h4 style="justify-content:right;text-align:end;color:papayawhip">
+      flame in the cradle, potential taut: spring; springtide moon, siren's
+      vanity: sink; men of mean times, divinity be damned: <i>dare</i><span style="color:rgb(0, 178, 209)"> &block;</span>
+    </h4>
+
+    <div style="background-color:gainsboro; font-weight:200; color:black">
+      Pugh analysis, Carter group theory, Sasho topology, LinAlg -> Naive Lie theory <br />
+      Sasho (topology), Needham (complex analysis, differential geometry), Keenan
+      (differential geometry, MCMC), !!! Multivariate statistics, !!! convex optimization,
+    </div>
+    <br /><br />
+
+    <hr />
+
+    <br />
+
+    
+
     <div style="text-align:end">
       <a href="/whitepaper">whitepaper</a>
       <br />
-      <a href="/poetry">Poetry</a>
+      <a href="/roadmap">Roadmap</a>
+      <br />
+      <a href="/stages">Gantt</a>
       <br />
       <a href="/living_poetry">The Living Poetry Project</a>
       <br />
     </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
   </body>
 </html>
